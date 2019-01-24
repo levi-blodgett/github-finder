@@ -5,6 +5,15 @@ class UI {
 
   // Display profile in UI
   showProfile(user) {
+    if (user.company === null) {
+      user.company = 'Not listed';
+    }
+    if (user.blog === '') {
+      user.blog = 'Not listed';
+    }
+    if (user.location === null) {
+      user.location = 'Not listed';
+    }
     this.profile.innerHTML = `
     <div class="card card-body mb-3">
       <div class="row">

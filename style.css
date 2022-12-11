@@ -1,3 +1,13 @@
-.mobile-margin { 
+.mobile-margin {
     margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#copyright {
+  margin-bottom: 10px;
 }

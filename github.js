@@ -7,10 +7,6 @@ class Github {
     this.repos_sort = 'created: asc';
   }
 
-  // https://api.github.com/users/
-  // https://api.github.com/users/levi-blodgett
-  // https://api.github.com/users/levi-blodgett/repos
-
    async getUser(user) {
     const profileResponse = await fetch(`https://api.github.com/users/${user}?client_id=${this.client_id}&client_secret=${this.client_secret}`);
 
